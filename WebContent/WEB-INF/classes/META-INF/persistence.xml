@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence 
+	http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/persistence"  version="2.1" >
+    <persistence-unit transaction-type="RESOURCE_LOCAL" name="SWE645" >
+    	<provider>org.hibernate.ejb.HibernatePersistence</provider>
+    	<class>cs.yli66.swe642.resources.DB</class>
+        <properties>
+            <property name="hibernate.connection.url" value="jdbc:oracle:thin:@artemis.vsnet.gmu.edu:1521/vse18c.vsnet.gmu.edu"/>            
+            <property name="hibernate.connection.driver_class" value="oracle.jdbc.driver.OracleDriver"/>
+            <property name="hibernate.connection.username" value="yli66"/>
+            <property name="hibernate.connection.password" value="gleengoo"/>
+            <property name="hibernate.archive.autodetection" value="class"/>
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.format_sql" value="true"/>
+            <property name="hbm2ddl.auto" value="update"/>
+        </properties>
+    </persistence-unit>
+</persistence>
